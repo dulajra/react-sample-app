@@ -1,20 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router} from "react-router-dom";
 
 import './index.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Routes from "./routes";
-import Navigation from "./components/Navigation/Navigation";
+import App from "./App";
 
 ReactDOM.render(
-    <Router>
-        <Navigation />
-        <div className="app">
-            <Routes/>
-        </div>
-    </Router>,
+    <App/>,
     document.getElementById("root")
 );
 

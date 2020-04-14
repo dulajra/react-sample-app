@@ -1,4 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Further referred [React - Basic HTTP Authentication Tutorial & Example
+](https://jasonwatmore.com/post/2018/09/11/react-basic-http-authentication-tutorial-example) for authentication. 
 
 ## Available Scripts
 

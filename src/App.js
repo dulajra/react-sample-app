@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {PrivateRoute} from "./components/PrivateRoute/PrivateRoute";
+import Login from "./views/Login/Login";
+import Home from "./views/Home/Home";
+import Products from "./views/Products/Products";
+import Navigation from "./components/Navigation/Navigation";
+
+export default class App extends React.Component {
+  render() {
+    return (
+        <div>
+          <Navigation/>
+          <div className='col-8 offset-2' style={{ 'margin-top': '5px' }}>
+              <Router>
+                  <Switch>
+                      <PrivateRoute path='/' exact component={Home}/>
+                      <PrivateRoute path='/products' component={Products}/>
+                      <Route path='/login' component={Login}/>
+                  </Switch>
+              </Router>
+          </div>
+        </div>
+    );
+  }
 }
-
-export default App;

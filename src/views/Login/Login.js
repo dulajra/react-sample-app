@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {Button, ControlLabel, FormControl, FormGroup} from "react-bootstrap";
-import "./Login.css";
 
 export default function Login() {
     const [email, setEmail] = useState("");
@@ -28,7 +27,7 @@ export default function Login() {
     }
 
     return (
-        <div className="Login">
+        <div className="col-4 offset-4" style={{ 'margin-top': '250px' }}>
             <form onSubmit={handleSubmit}>
                 <FormGroup controlId="email" bsSize="large">
                     <ControlLabel>Email</ControlLabel>
