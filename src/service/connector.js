@@ -3,6 +3,10 @@ export default function request(method, url) {
         window.fetch(url, {
             method: method,
             mode: 'cors',
+            headers: {
+                'Authorization': `Bearer ${localStorage.getItem('token')}`,
+                'Content-Type': 'application/json'
+            },
         }).then((response) => {
             response.json().then((data) => {
                 resolve(data);

@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cd390a7-6c8f-4312-9380-91c9634367a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/PrivateRoute/PrivateRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Auth/Auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Login/Login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +60,7 @@
       <workItem from="1586859352034" duration="3855000" />
       <workItem from="1586873831176" duration="41000" />
       <workItem from="1586873877666" duration="2679000" />
+      <workItem from="1586955684180" duration="3280000" />
     </task>
     <servers />
   </component>
@@ -83,7 +72,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -126,10 +117,10 @@
     </state>
     <state x="624" y="238" key="run.anything.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1586873936580" />
     <state x="624" y="238" key="run.anything.popup/0.1080.1920.1080/0.0.1920.1044@0.0.1920.1044" timestamp="1586697597730" />
-    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1586876745767">
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1586969294103">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="623" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1586876745767" />
-    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup/0.1080.1920.1080/0.0.1920.1044@0.0.1920.1044" timestamp="1586706789397" />
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup/0.1080.1920.1080/0.0.1920.1044@0.0.1920.1044" timestamp="1586969294103" />
   </component>
 </project>
