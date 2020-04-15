@@ -1,5 +1,7 @@
 import React from "react";
 
+import history from "../../history";
+
 export default class Home extends React.Component {
     render() {
         return (
@@ -9,6 +11,10 @@ export default class Home extends React.Component {
                 </div>
                 <div className="card-body">
                     <p className="card-text">This is the home page of the sample react app</p>
+                    <button className="btn bg-primary" onClick={() => {
+                        localStorage.removeItem("token");
+                        window.location.reload();
+                    }}>Logout</button>
                 </div>
                 <div className="card-footer text-muted">
                     All Rights Reserved

@@ -1,4 +1,5 @@
 import React from "react";
+import history from "../../history";
 import {Button, ControlLabel, FormControl, FormGroup} from "react-bootstrap";
 
 export default class Login extends React.Component {
@@ -24,7 +25,7 @@ export default class Login extends React.Component {
 
     handleSubmit = (event) => {
         this.callLogin(this.state.username, this.state.password);
-        event.preventDefault();
+        history.push("/");
     };
 
     callLogin = (username, password) => {
