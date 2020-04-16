@@ -25,7 +25,7 @@ export default class Login extends React.Component {
 
     handleSubmit = (event) => {
         this.callLogin(this.state.username, this.state.password);
-        history.push("/");
+        history.push(this.state.from);
     };
 
     callLogin = (username, password) => {
