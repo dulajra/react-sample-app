@@ -1,11 +1,12 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
 
 import {PrivateRoute} from "./components/PrivateRoute/PrivateRoute";
 import Login from "./views/Login/Login";
 import Home from "./views/Home/Home";
 import Products from "./views/Products/Products";
 import Navigation from "./components/Navigation/Navigation";
+import {isAuthenticated} from "./helpers/auth";
 
 export default class App extends React.Component {
   render() {
@@ -17,7 +18,11 @@ export default class App extends React.Component {
                   <Switch>
                       <PrivateRoute path='/' exact component={Home}/>
                       <PrivateRoute path='/products' component={Products}/>
-                      <Route path='/login' component={Login}/>
+                      <Route path='/login' render={(props) =>
+                          !isAuthenticated() ?
+                              <Login /> :
+                              <Redirect to={{pathname: '/', state: {from: props.location}}}/>
+                      }/>
                   </Switch>
               </Router>
           </div>

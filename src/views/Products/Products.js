@@ -12,12 +12,15 @@ export default class Products extends React.Component {
         }
     }
 
-    componentDidMount() {
-        request('GET', "http://localhost:8080/products").then((data) => {
+    async componentDidMount() {
+        try {
+            const data = await request('GET', "http://localhost:8080/products");
             this.setState({
                 products: data.data,
-            });
-        })
+            })
+        } catch (e) {
+            console.error('Error while fetching products.', e);
+        }
     }
 
     handleOnRowClick = (event) => {
